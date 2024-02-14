@@ -14,3 +14,57 @@ body {
 h2 {
     color: #333;
 }
+
+#qrInput {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#generateButton {
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#generateButton:hover {
+    background-color: #0056a3;
+}
+
+#saveButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#saveButton:hover {
+    background-color: #45a049;
+}
+
+/* Style the Copy to Clipboard button */
+#copyButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#copyButton:hover {
+    background-color: #d32f2f;
+}
+
+#qrCode {
+    margin-top: 20px;
+}
