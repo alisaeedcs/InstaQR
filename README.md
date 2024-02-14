@@ -26,4 +26,5 @@ Developed manifest.json file.
 - update coming soon
 
 
-![Javascript Icon](https://raw.githubusercontent.com/mahozad/mahozad/blob/master/stackoverflow/javascript-logo-20.svg)
+
+![Javascript Icon](https://raw.githubusercontent.com/mahozad/mahozad/45bd308d6ad117c69c42e54d29d80f583b7e86cc/stackoverflow/javascript-logo-20.svg)
