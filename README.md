@@ -1,5 +1,4 @@
 # InstaQR
-By Clayton Valley Charter Computer Science Club 
 
 Lead Developer:
 Ali Saeed
