@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="popup.css">
     <title>QR Code Generator</title>
 </head>
 <body>
-    <h2>InstaQR</h2>
-    <input type="text" id="qrInput" placeholder="Enter text or URL">
-    <button id="generateButton">Generate QR Code</button>
+    <div id="header">
+        <h2 id="title">instaQR</h2>
+        <a href="images/icon128.jpg" target="_blank" id="logoLink">
+            <img src="images/icon128.jpg" alt="Logo" id="logo">
+        </a>
+    </div>
+    <input type="text" id="qrInput" placeholder="enter text or url">
+    <button id="generateButton" class="status-button"></button>
     <div id="qrCode"></div>
     <button id="saveButton" style="display: none;">Save Image</button>
+    <button id="copyButton" class="status-button" style="display: none;"></button>
     <script async src="qrcode.js"></script>
     <script async src="popup.js"></script>
 </body>
