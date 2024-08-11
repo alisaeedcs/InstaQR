@@ -1,7 +1,6 @@
 # InstaQR
 
-Lead Developer:
-Ali Saeed
+Developed By: Ali Saeed (Lead), Omar Khan and Muaaz Mohammed (Co-Leads)
 
 
 ## Accessing the Extension
@@ -31,8 +30,6 @@ Developed manifest.json file.
 - manifest version 3
 - permissions, activetab
 - icons to be added soon
-
-Collaborators:
-Ashwin Loganathan, Sahil Gattu, James Degennaro, Brandon Reyes, Muaaz Mohammed, Connor Juricich, Anes Boukhelkhal, Jason Miller, Eric Catalano, Darren Blaylock, Zayd Ghbeish, Kenneth Villamor, Omar Saadat
+- Initial Collaborators: Ashwin Loganathan, Sahil Gattu, James Degennaro, Brandon Reyes, Muaaz Mohammed, Connor Juricich, Anes Boukhelkhal, Jason Miller, EricCatalano, Darren Blaylock, Zayd Ghbeish, Kenneth Villamor, Omar Saadat
 
 ![Javascript Icon](https://raw.githubusercontent.com/mahozad/mahozad/45bd308d6ad117c69c42e54d29d80f583b7e86cc/stackoverflow/javascript-logo-20.svg)
