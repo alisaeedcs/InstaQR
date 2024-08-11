@@ -1,70 +1,159 @@
+:root {
+    --primary-color: #1e3a8a; /* Deep Blue */
+    --secondary-color: #aeaeae; /* Light Gray */
+    --accent-color: #2b405e; /* Dark Gray/Black */
+    --background-center: #ffffff; /* White (lighter top) */
+    --background-edge: #ffffff; /* White (darker bottom) */
+    --text-color: #e2e8f0; /* Light Gray */
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 300px; /* Set the width to make it wider */
-    padding: 20px; 
-    border-radius: 10px;
-    background-color: #f1f1f1;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    background: radial-gradient(circle, var(--background-center) 0%, var(--background-edge) 100%);
+    position: relative;
 }
 
-h2 {
-    color: #333;
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#title {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+}
+
+#logoLink {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 30px; /* Adjust as needed */
+    width: auto;
 }
 
 #qrInput {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 25px; /* Rounded input box */
+    text-align: center;
+    font-size: 16px;
+}
+
+#qrInput::placeholder {
+    color: #e3e3e3; /* Light Gray (or any color you prefer) */
+    opacity: 1; /* Ensure the placeholder text is fully opaque */
+}
+
+button {
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    transition: background-color 0.3s ease; /* Smooth transitions */
+    font-size: 12px; /* Ensuring button text size */
+    line-height: 1.5; /* Adjust line height */
 }
 
 #generateButton {
-    background-color: #0074d9;
+    background-color: var(--primary-color);
     color: white;
+    width: 100px;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 24px;
+    border-radius: 50px;
     cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    transition: background-color 0.3s ease; /* Smooth transitions */
+    font-size: 12px; /* Ensuring button text size */
+    line-height: 1.5; /* Adjust line height */
+}
+
+#generateButton::before {
+    content: "Generate";
+}
+
+#generateButton.clicked::before {
+    content: "Generated";
 }
 
 #generateButton:hover {
-    background-color: #0056a3;
+    background-color: #1e40af;
+}
+
+#generateButton.clicked {
+    background-color: #006b12; /* Final color when clicked */
+}
+
+#saveButton, #copyButton {
+    display: none; /* Initially hidden */
 }
 
 #saveButton {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
+    background-color: #fb3434;
 }
 
 #saveButton:hover {
-    background-color: #45a049;
+    background-color: #b92222;
 }
 
-/* Style the Copy to Clipboard button */
 #copyButton {
-    background-color: #f44336;
+    background-color: var(--accent-color);
     color: white;
+    width: 150px;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 24px;
+    border-radius: 50px;
     cursor: pointer;
     margin-top: 10px;
+    position: relative;
+    transition: background-color 0.3s ease; /* Smooth transitions */
+    font-size: 12px; /* Ensuring button text size */
+    line-height: 1.5; /* Adjust line height */
 }
 
 #copyButton:hover {
-    background-color: #d32f2f;
+    background-color: #334155;
+}
+
+#copyButton.success {
+    background-color: #4CAF50; /* Success color */
+    content: "Copied!";
+    color: white;
+}
+
+#copyButton::after {
+    content: 'Copy to Clipboard';
+    transition: opacity 0.3s ease; /* Smooth transition for text change */
+}
+
+#copyButton.success::after {
+    content: 'Copied!';
+    background-color: #4CAF50; /* Success color */
 }
 
 #qrCode {
     margin-top: 20px;
+    text-align: center;
 }
