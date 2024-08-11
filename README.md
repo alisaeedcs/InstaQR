@@ -11,6 +11,11 @@ Following up, you will see a QR Code Icon pop up on the top right of the browser
 
 ## Updates
 
+8.10.24
+- brand new ui update
+- copy button added
+- 65+ installs
+
 4.30.24
 - extension updated with new icons/branding
 - ~50 installs
