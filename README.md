@@ -10,6 +10,9 @@ Following up, you will see a QR Code Icon pop up on the top right of the browser
 
 ## Updates
 
+9.23.24
+- 125+ installs
+
 8.10.24
 - brand new ui update
 - copy button added
